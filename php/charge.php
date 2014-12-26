@@ -22,11 +22,11 @@
   // A try can have multiple catch statements depending on the type of error that can occur
   catch(Stripe_CardError $e) // Catching a card error, like the card was declined
   {
-    echo '<h1>Uh oh an error occured, your card wasn\'t charged</h1><p>' . $e->getMessage() . '</p>'
+    echo '<h1>Uh oh an error occured, your card wasn\'t charged</h1><p>' . $e->getMessage() . '</p>';
   }
   catch(Stripe_Error $e) // Some more generic Stripe error occured. 
   {
-    echo '<h1>Uh oh an error occured, your card wasn\'t charged</h1><p>' . $e->getMessage() . '</p>'
+    echo '<h1>Uh oh an error occured, your card wasn\'t charged</h1><p>' . $e->getMessage() . '</p>';
   }
 
   try{
@@ -41,7 +41,7 @@
   }
   catch(Stripe_CardError $e) // Catching a card error, like the card was declined
   {
-    echo '<h1>Uh oh an error occured, your card wasn\'t charged</h1><p>' . $e->getMessage() . '</p>'
+    echo '<h1>Uh oh an error occured, your card wasn\'t charged</h1><p>' . $e->getMessage() . '</p>';
   }
   //If another error occured, like an invalid request, in this case we wouldn't have caught it. 
 
